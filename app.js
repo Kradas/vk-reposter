@@ -8,10 +8,10 @@ var database = new firebase(config.vk.firebaseLink);
 
 function getAttachmentsStr(attachments) {
     var attachmentsStr = '';
-    var likna = ''
+    var postLink = '';
     var flag = 0;
     if ('link' in attachments) {
-        linka = linka + attachments[attachments.type].url;
+        postLink = postLink + attachments[attachments.type].url;
     }
     attachments.forEach(function(item, i) {
         if (attachmentsStr.length > 0) {

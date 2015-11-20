@@ -1,5 +1,5 @@
 config
-!config/default.js
+!config/default.json
 node_modules
 npm-debug.log
 .DS_Store
